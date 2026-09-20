@@ -1,0 +1,15 @@
+What is real use of constructor:
+- Constructor initiales attribites automatically when an object is created
+- real world use: We put in all  atributes nessasry for programming which you do not expect
+ the user to initiate manually inside the constructor
+
+Whys is pythonn refered to as an OOP language?:
+- Beacuse prettymuch everything in python is an object of a class.
+- All datatypes (int,str,tuple,dict,list) all are objects of a class and have 
+predefined methords also
+
+What are advantages of OOP programming:
+- Code reusablitiy
+- Debugging
+- Easier to colaborate
+- One can create his own datatype even

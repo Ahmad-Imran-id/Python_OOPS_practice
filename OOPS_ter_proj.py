@@ -2,13 +2,14 @@ class terbook:
     def __init__(self):
         self.email=''
         self.password=''
-        self.signedin=False
+        self.signedup=False
+        self.loggedin=True
         self.menu()
 
     def menu(self):
         menu_input=input("""
         Type 1 to signup
-        Type 2 to signin 
+        Type 2 to login 
         Type 3 to write a post
         Type 4 to text your friend
         Press any button to exit""")
@@ -16,7 +17,7 @@ class terbook:
         if menu_input==1 or menu_input=='1' :
             self.signup()
         elif menu_input==2 or menu_input=='2':
-            pass
+            self.login()
         elif menu_input==3 or menu_input=='3':
             pass
         elif menu_input==4 or menu_input=='4':
@@ -26,11 +27,42 @@ class terbook:
 
 
     def signup(self):
+        print('You are now being signedup')
         self.email=input('\nPut in email: ')
         self.password=input('Put in password: ')
-        print(f'\nYour credentials are \n email: {self.email} \n password: {self.password}')
-        print('\nYour have been signedup')
+        
+        if self.email !='' and self.password!='':
 
+            self.signedup=True
+            print('\nYour have been signedup')
+            print(f'\nYour credentials are \n email: {self.email} \n password: {self.password}')
+
+
+        else:
+            print ('You are already signed in now you need to login')
+            self.signup()
+
+
+        self.menu()
+
+    def login(self):
+        print('You are now being loggedin')
+        if self.signedup==True:
+            email_check=input('Enter email: ')
+            password_check=input('Enter password: ')
+            if self.email==email_check and self.password==password_check:
+                self.loggedin=True
+                print('You are now loggedin')
+            else:
+                print('Your credentials are wrong try again')
+                self.login()
+        else:
+            print('You are not signedup signup first.')
+
+        self.menu()
+    
+
+            
 
 obj=terbook()
 

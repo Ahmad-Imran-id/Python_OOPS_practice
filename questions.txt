@@ -30,4 +30,40 @@ Following topics are important
         instead it is called through class
 
     >Inheritance:
+        -Inheritance lets you inherit attributes and methords from 1 class to the next
+        -The child class gets access to the parent classes attributes but the parent
+        class does not get access to the child classes attribites and methords
+        -You can not create a new constructor in the child class and expect the 
+        constructor of the partrent class to work unless you are using super()
+        
+        >super():
+        -it lets you call constructor and methords of parent class inside child class
+        while also letting child class have constructor and methords of its own.
+        -with super you cannot individually acess 1 attribute of the parent class instead
+        it lets you access the constructor and the methords.
+        -super() can only be used inside child class and cannot be used outside class 
+        while using object
+
+        >Types of Inheritance 1 Single / 2.Multilevel / 3.Hirearcle / 4.Multiple / 5.Hybrid
+            >1. Single:
+                -it is when 1 child class inherits from parent class
+           
+            >2 Multilevel
+                -It is when the child class inherits from parent class which itself
+                is inheriting from grandparent class
+            
+            >3.Hirerarcle
+                -It is when 2 diffrent classes inherit from the same main class.
+
+            >4.Multilevel
+                -It is when 2 classes inherit from the same main class (hirerarcle) and
+                then another derived class inherits from both these classes.
+
+            >5.Hybrid:
+                -It is same as mutillevel but the derived class also inherits from the
+                main class by somehow calling the main constructor of the intial parent 
+                class
+
+
+
     

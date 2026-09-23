@@ -1,0 +1,4 @@
+What is Encapsulation and how is it done in python?
+What is usecase of getter and setter?
+What is static methord,what is its usecase, and how can it be used in python?
+What is super() methord,how is it used and can it be sued from outside in object?

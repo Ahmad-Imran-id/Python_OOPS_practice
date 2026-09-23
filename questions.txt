@@ -19,6 +19,15 @@ Following topics are important
         -Encapsulation is to hide/protect some attribute from being used 
         -in python an atribute can be hidden by using __before defining atribute
         -it only hides that atribute from other person acesseing it using . but it can 
-        still be accessed by using  
-    >Getter and setter
-    >static methord
+        still be accessed by using (class_name.__atribute_name) 
+    >Getter and setter:
+        -Getter is a methord that gets value of hidden atribute
+        -setter is methord that sets value of hidden attribites
+    >static methord:
+        -Any methord which changes attribute existing outside of constructor and in class
+        is a static methord as that attribute is static
+        -It does not require use of (self) as the attribute is not dependant on object
+        instead it is called through class
+
+    >Inheritance:
+    

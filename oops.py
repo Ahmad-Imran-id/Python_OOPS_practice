@@ -3,6 +3,7 @@ class Employee:
         self.name=name
         self.age=age
         self.id=id
+        self.__test='defualt test'
 
     def travel(self,destination):
         print(f'Employee plans to travel to {destination}')
@@ -12,6 +13,6 @@ class Employee:
         self.travel(destination)
 
 
-Employee_1=Employee('Ahmad',21,1)
-
-Employee_1.employee_information('Moroco')
+if __name__ == '__main__':
+    Employee_1=Employee('Ahmad',21,1)
+    Employee_1.employee_information('Moroco')
